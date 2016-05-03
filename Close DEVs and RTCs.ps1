@@ -1,5 +1,5 @@
 ﻿# This script stops all running NAV client processes
-.# Works also on terminal servers because of the UserName filtering
+# Works also on terminal servers because of the UserName filtering
 
 $Process = Get-Process | Where-Object {$_.ProcessName -eq "fin" -or `
                                        $_.ProcessName -eq "finsql" -or `
